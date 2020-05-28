@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HealthCalc</string>
+    <string name="id1">Tài khoản</string>
+    <string name="id2">Đổi mật khẩu</string>
+    <string name="id3">Xóa tài khoản</string>
+    <string name="id4">Thoát</string>
+</resources>

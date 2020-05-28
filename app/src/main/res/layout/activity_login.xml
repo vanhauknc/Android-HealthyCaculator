@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cuim"
+    android:orientation="vertical"
+
+    tools:context=".LoginActivity">
+
+
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/cal"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        ></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Heath Calculator"
+        android:gravity="center"
+        android:textColor="#dff9fb"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+
+        >
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/edtuser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:hint="Username"
+        android:inputType="text"
+        android:textColor="#009688"
+        android:textColorHint="#badc58"
+        android:textSize="20sp"
+        android:textStyle="bold"></EditText>
+
+    <EditText
+        android:id="@+id/edtpass2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:ems="15"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#009688"
+        android:textColorHint="#badc58"
+        android:textSize="20sp"
+        android:textStyle="bold"></EditText>
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="109dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#30336b"
+        android:drawableLeft="@drawable/ic_camera_black_24dp"
+        android:text="LOGIN"
+        android:textStyle="bold">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:text="Bạn chưa có tài khoản ?"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#dff9fb"
+
+            ></TextView>
+
+        <Button
+            android:id="@+id/btndk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Đăng kí ngay"
+           android:layout_marginTop="18dp"
+            android:textColor="#30336b"
+            android:drawableLeft="@drawable/ic_pie_chart_black_24dp"
+            ></Button>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

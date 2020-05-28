@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/tvicon"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_camera_black_24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="XXXTentation"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDestription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In this Android WorldClub tutorial i will show you how to create a custom listview in android studio. I will also implement on item click on listview." />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
