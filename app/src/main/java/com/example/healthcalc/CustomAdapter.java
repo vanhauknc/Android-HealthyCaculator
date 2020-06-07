@@ -68,6 +68,12 @@ public class CustomAdapter extends ArrayAdapter {
             icon.setImageResource(flags[4]);
         }
 
+        if (danhsachdata.get(position).getTitle().equals("Thông báo !")){
+
+            icon.setImageResource(flags[5]);
+        }
+
+
 
 
         return  convertView;

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public static String FnUser="";
     ListView lsv ;
     ArrayList <Danhsach> listds = new ArrayList<>();
-    int flags[] = {R.drawable.icons8_heart_with_pulse_50px,R.drawable.icons8_exercise_50px,R.drawable.icons8_blood_drawing_50px,R.drawable.icons8_water_50px,R.drawable.icons8_standing_man_50px};
+    int flags[] = {R.drawable.icons8_heart_with_pulse_50px,R.drawable.icons8_exercise_50px,R.drawable.icons8_blood_drawing_50px,R.drawable.icons8_water_50px,R.drawable.icons8_standing_man_50px,R.drawable.icons8_notification_40px};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -113,6 +113,11 @@ public class MainActivity extends AppCompatActivity {
         ds4.setDestription("Trọng lượng được cho là lý tưởng so với cân nặng của bạn");
         listds.add(ds4);
 
+        Danhsach ds5 = new Danhsach();
+        ds5.setTitle("Thông báo !");
+        ds5.setDestription("Tùy chỉnh thông báo của bạn");
+        listds.add(ds5);
+
 
 
         final CustomAdapter adapter3 = new CustomAdapter(this,R.layout.listview,listds,flags);
@@ -149,6 +154,12 @@ public class MainActivity extends AppCompatActivity {
 
                     Intent Indangki5 = new Intent(MainActivity.this,subWeightActivity.class);
                     startActivity(Indangki5);
+                }
+                if(position==5){
+                    //trong luong ly tuong
+
+                    Intent Indangki6 = new Intent(MainActivity.this,NotiActivity.class);
+                    startActivity(Indangki6);
                 }
             }
         });
